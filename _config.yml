@@ -1,0 +1,14 @@
+# Site settings
+name: Olga Christensen
+title: My Blog
+email: oc222ba@student.lnu.se
+description: Client-Based Web Programming at LNU
+avatar: https://avatars0.githubusercontent.com/u/14150065?v=3&s=460
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+github_username: oc777
+
+# Build settings
+markdown: kramdown
+
+paginate: 10

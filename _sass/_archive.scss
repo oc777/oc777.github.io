@@ -1,0 +1,25 @@
+/**
+* archive
+*/
+
+.archive-intro {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: $spacing-unit 0;
+}
+
+.archive-post {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: $spacing-unit 0;
+
+  .more {
+    padding-top: $spacing-unit/2;
+  }
+
+  img {
+    max-height: 5em;
+  }
+
+
+}

@@ -1,0 +1,28 @@
+<div class="blog">
+    <div class="wrapper">
+        <h2 id="blog">Blog</h2>
+
+        <div class="about-text">
+            <p>
+                Death weeks early had their and folly timed put. Hearted forbade on an village ye in fifteen. Age attended
+                betrayed her man raptures laughter. Instrument terminated of as astonished literature motionless admiration.
+            </p>
+        </div>
+
+        <div class="blog-list">
+            <ul>
+                {% for post in site.posts limit: 3 %}
+                <li>
+                    <div class="post">
+                        <img src="img/blog.png" alt="icon">
+                        <h4><a href="{{ post.url | prepend: site.baseurl  }}">{{ post.title }}</a></h4>
+                        <p><strong>{{ post.date | date: "%b %-d, %Y" }}</strong></p>
+                        <span>{{ post.description }}</span>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</div>

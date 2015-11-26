@@ -1,0 +1,17 @@
+/* TEAM */
+    Creator: Olga Christensen
+    Contact: oc222ba@student.lnu.se
+    GitHub: oc777
+
+
+
+/* THANKS */
+    LNU, Sweden: lnu.se
+    Internet
+
+
+
+/* SITE */
+    Language: English
+    Standards: HTML5, CSS3
+    IDE: WebStorm, Photoshop, Illustrator

@@ -1,0 +1,75 @@
+/**
+ * Site footer
+ */
+
+.site-footer {
+  border-bottom: 10px solid $grey-color-dark;
+  height: 40px;
+  background: url("/img/footer1.jpg") center;
+  background-size: cover;
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+
+  a {
+    color: white;
+    &:hover {
+      color: $brand-color;
+    }
+
+}
+
+.contact-list {
+  list-style: none;
+  margin-left: 0;
+  }
+}
+
+
+.footer-col-wrapper {
+  font-size: 15px;
+  color: $grey-color;
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
+}
+
+.footer-col {
+  float: left;
+  padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+  text-align: left;
+  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+  width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  text-align: right;
+  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+  width:         calc(50% - (#{$spacing-unit} / 2));
+  .text {
+    color: white;
+  }
+}
+
+
+
+@include media-query($on-palm) {
+  .site-footer {
+    height: 50px;
+    padding-top: $spacing-unit / 2;
+    line-height: $base-line-height * 1.4;
+  }
+
+  .footer-col {
+    text-align: center;
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-col-2 {
+    display: none;
+  }
+}
+

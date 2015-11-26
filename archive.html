@@ -1,0 +1,30 @@
+---
+layout: archive
+title: My Blog | Archive
+---
+
+<div class="wrapper">
+
+    <div class="archive-intro">
+        <p>Here you can read all my blog posts. Click on <i>"Read more"</i> to view the full article.</p>
+    </div>
+
+    {% for post in site.posts limit: 10 %}
+
+    <div class="archive-post">
+
+        <img src="img/blog.png" alt="icon">
+        <h4><a href="{{ post.url | prepend: site.baseurl  }}">{{ post.title }}</a></h4>
+        <p><strong>{{ post.date | date: "%b %-d, %Y" }}</strong></p>
+        <span>{{ post.content | truncatewords: 50 }}</span>
+        <p class="more"><a href="{{ post.url }}">Read more</a></p>
+
+    </div>
+
+    {% endfor %}
+
+
+
+
+
+</div>

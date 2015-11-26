@@ -1,0 +1,103 @@
+/**
+* about
+*/
+
+
+    .icons {
+      margin: 0 auto;
+      max-width: 80%;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: $spacing-unit;
+
+      .icons-left {
+        display: inline-block;
+        float: left;
+        //padding-top: 2em;
+
+        img {
+          max-height: 5em;
+
+          @include media-query($on-palm) {
+            height: 1.5em;
+          }
+        }
+      }
+
+      .face {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        background: url("/img/avatar.jpeg") $grey-color;
+        border-radius: 50%;
+
+        @include media-query($on-tablet) {
+          width: 90px;
+          height: 90px;
+          background: url("/img/ava.jpeg") $grey-color;
+        }
+      }
+
+      .icons-right {
+        display: inline-block;
+        float: right;
+        //padding-top: 2em;
+        img {
+          max-height: 5em;
+
+          @include media-query($on-palm) {
+            height: 1.5em;
+          }
+        }
+      }
+    }
+
+    .about-text {
+      max-width: 80%;
+      margin: 0 auto;
+      padding-bottom: $spacing-unit;
+    }
+
+    .about-stuff {
+      max-width: 60%;
+      margin: 0 auto;
+      padding-bottom: $spacing-unit;
+
+      .stuff-left {
+        float: left;
+        max-width: 45%;
+        text-align: left;
+      }
+      .stuff-right {
+        float: right;
+        max-width: 45%;
+        text-align: left;
+      }
+      span {
+        font-weight: bold;
+        color: $grey-color;
+      }
+
+      @include media-query($on-palm) {
+        max-width: 80%;
+      }
+    }
+
+    .about-stuff:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .rock {
+      max-height: 0.9em;
+    }
+
+    .cat {
+      background: url("/img/cat.jpg") center $grey-color-light;
+      height: 290px;
+      background-size: cover;
+    }
+
+
