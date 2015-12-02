@@ -14,7 +14,7 @@ title: My Blog | Archive
     <div class="archive-post">
 
         <img src="img/blog.png" alt="icon">
-        <h4><a href="{{ post.url | prepend: site.baseurl  }}">{{ post.title }}</a></h4>
+        <h4><a href="{{ post.url | prepend: site.url  }}">{{ post.title }}</a></h4>
         <p><strong>{{ post.date | date: "%b %-d, %Y" }}</strong></p>
         <span>{{ post.content | truncatewords: 50 }}</span>
         <p class="more"><a href="{{ post.url }}">Read more</a></p>
