@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title:  "Robots, Humans, etc"
 date:   2015-11-19 00:06:09
