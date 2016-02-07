@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title:  "CSS preprocessors"
 date:   2015-11-12 00:06:09
